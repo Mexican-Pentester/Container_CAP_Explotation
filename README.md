@@ -21,4 +21,6 @@ The default capabilities are:
 * SYS_CHROOT	Allows use of the chroot command. Enable only if your process actively uses chroot to change the root directory.
 * SETFCAP	Allows the container to set file capabilities. Sometimes this is needed during a software install, but generally should not be needed by a running container in production.
 
-https://mexicanpentester.com/2021/03/06/container-security-en-espanol/
+An example of cap_sys --> https://blog.pentesteracademy.com/abusing-sys-module-capability-to-perform-docker-container-breakout-cf5c29956edd
+
+Full blog post --> https://mexicanpentester.com/2021/03/06/container-security-en-espanol/
