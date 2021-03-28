@@ -6,9 +6,9 @@ Excesive linux capabilities like (cap_net_raw, cap_sys_admin, cap_setuid, cap_sy
 
 The default capabilities are:
 
-*SETPCAP	Allow a process to change it's own capabilities set (within the set it is already allowed). Should not be dangerous in practice.
+* SETPCAP	Allow a process to change it's own capabilities set (within the set it is already allowed). Should not be dangerous in practice.
 
-*MKNOD	Allows creation of special devices. Almost all containers will receive the devices they need automatically, so this is almost never needed.
+* MKNOD	Allows creation of special devices. Almost all containers will receive the devices they need automatically, so this is almost never needed.
 
 *AUDIT_WRITE	Allow the container to write records to the underlying kernel auditing log. This is generally used for things like ssh login. It is a better practice to keep all container logs within the container and drain them, rather than allow the container to write to the host log files.
 *CHOWN	Allow the container process to change file permissions. This should generally never be needed in production.
